@@ -1,0 +1,10 @@
+---
+# Source: robot-shop/templates/web-service.yaml
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: web
+spec:
+  to:
+    kind: Service
+    name: web
